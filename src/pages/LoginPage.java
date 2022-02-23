@@ -25,7 +25,7 @@ public class LoginPage extends BasicPage {
 		return this.driver.findElement(By.name("btn_submit"));
 	}
 
-	public void loginIn(String email, String password) throws InterruptedException {
+	public void logIn(String email, String password) throws InterruptedException {
 		this.getEmailInput().clear();
 		this.getEmailInput().sendKeys(email);
 		this.getPasswordInput().clear();
